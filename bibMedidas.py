@@ -196,9 +196,6 @@ def getMediana(tbDados):
         valorMediano= (( (getAcMax(tbDados)/2 - fanterior) /freqMediana) *ampli) +medianaInf
         return valorMediano
 
-###NOS DA A MODA DE UMA TABELA DE DADOS TABULADOS (NAO EM CLASSE)
-def getModa(tbDados):
-    return maiorRepeticao(tbDados)[0] #RETORNA SOMENTE O VALOR PARA O USUARIO
 
 ###NOS DA A MODA DE KING (DADOS EM CLASSE)
 def getModaKing(tbDados):
@@ -257,7 +254,7 @@ def getVarianciaP(tbDados):
         while i<len(tbDados):
             varianciaP+=(tbDados[i][0] - media) ** 2
             i+=1
-        varianciaP = vvarianciaP / getAcMax(tbDados)
+        varianciaP = varianciaP / getAcMax(tbDados)
         return varianciaP
     else:
         while i<len(tbDados):
