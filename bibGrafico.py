@@ -13,7 +13,9 @@ def tbClass(arq):
     linha=arq.readline()
     while linha!="":
         dado=[]
-        linha=linha.split(" ")
+        #SEPARA CLASSE DA FREQUENCIA
+        linha=linha.split(";")
+        
         freq=int(linha[1])
         cls=[int (x) for x in linha[0].split("-")] #JA FAZ O APPEND CONVERTENDO A STRING PARA INTEIRO
         dado.append(cls)

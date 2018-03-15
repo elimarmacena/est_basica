@@ -3,7 +3,9 @@ import bibGrafico as build
 
 
 def main():
+    #PASSAGEM DO ARQUIVO PARA A LEITURA
     base_dado=open("estatistica.txt", "r") #VARIAVEL PARA GUARDAR O ARQUIVO
+
     tema=build.titulo(base_dado) #TEMA DA ESTATISTICA APRESENTADA
     print("TEMA DOS DADOS:%s\n"%tema)
     tbDados=build.tbClass(base_dado) #CRIANDO A TABELA APARTIR DO ARQUIVO
